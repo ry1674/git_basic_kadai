@@ -1,0 +1,38 @@
+riku@yamauchirikunoMacBook-Air Git % mkdir git_challenge
+riku@yamauchirikunoMacBook-Air Git % cd git_challenge
+riku@yamauchirikunoMacBook-Air git_challenge % git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint:   git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint:   git branch -m <name>
+Initialized empty Git repository in /Users/riku/Library/CloudStorage/GoogleDrive-riku.yamauchi0813@gmail.com/マイドライブ/Git/git_challenge/.git/
+riku@yamauchirikunoMacBook-Air git_challenge % git add hello_world.txt
+riku@yamauchirikunoMacBook-Air git_challenge % git commit -m "hello_world.txtを追加"
+[master (root-commit) 72fa022] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+riku@yamauchirikunoMacBook-Air git_challenge % git add hello_world.txt
+riku@yamauchirikunoMacBook-Air git_challenge % git commit -m "日本語訳を追記"
+[master 16b2c19] 日本語訳を追記
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+riku@yamauchirikunoMacBook-Air git_challenge % git status
+On branch master
+nothing to commit, working tree clean
+riku@yamauchirikunoMacBook-Air git_challenge % git log
+commit 16b2c194da998d4d09d220f04abb1b24b7f9c9b6 (HEAD -> master)
+Author: ry1674 <riku.yamauchi0813@gmail.com>
+Date:   Tue May 14 21:38:05 2024 +0900
+
+    日本語訳を追記
+
+commit 72fa022dcd4785ab2e2bb53addad5a7cfe9c2250
+Author: ry1674 <riku.yamauchi0813@gmail.com>
+Date:   Tue May 14 21:36:06 2024 +0900
+
+    hello_world.txtを追加
